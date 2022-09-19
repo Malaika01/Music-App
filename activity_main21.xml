@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".MainActivity20">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="0.3"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/arrow_back">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="0.2"
+            android:text="Edit Profile"
+            android:textColor="#FFFF"
+            android:textSize="40dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="80dp"
+            android:textSize="20dp"
+            android:textColor="#F9A825"
+            android:text="Save"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.1"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1.3">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/circle2">
+
+        </ImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="140dp"
+            android:layout_weight="0.1"
+            android:text="Username"
+            android:textColor="#F4C725"
+            android:textSize="30dp"></TextView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:layout_width="380dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/rectangle"></ImageView>
+        <EditText
+            android:id="@+id/editTextTextPersonEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:inputType="textEmailAddress"
+            android:textColor="#F4C725"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:text="abcd@abcd.com"></EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F4C725"
+            android:textSize="20dp"
+            android:layout_toEndOf="@id/editTextTextPersonEmail"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:text="edit">
+
+        </TextView>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="0.1"
+            android:text="Password"
+            android:textColor="#F4C725"
+            android:textSize="20dp"></TextView>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/rectangle"></ImageView>
+
+        <EditText
+            android:id="@+id/editTextTextPersonPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:text="abcd@abcd.com"
+            android:textColor="#F4C725"
+            android:textSize="20dp"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/editTextTextPersonPassword"
+            android:text="edit"
+            android:textColor="#F4C725"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#CD322929"
+        android:weightSum="0.3"
+        android:orientation="vertical"
+        android:layout_weight="0.8">
+        <RelativeLayout
+            android:layout_weight="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fav"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/fav"></ImageView>
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/fav"
+                android:src="@drawable/add3"></ImageView>
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/add"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/search"></ImageView>
+            <ImageView
+                android:id="@+id/later"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/search"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/later"></ImageView>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1">
+
+            <TextView
+                android:id="@+id/liked1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Liked"
+                android:textColor="@color/white"
+                android:textSize="15dp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/add1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_toEndOf="@id/liked1"
+                android:text="Add"
+                android:layout_marginLeft="60dp">
+            </TextView>
+            <TextView
+                android:id="@+id/search1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_toEndOf="@id/add1"
+                android:text="Search"
+                android:layout_marginLeft="60dp">
+            </TextView>
+            <TextView
+                android:id="@+id/later1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_toEndOf="@id/search1"
+                android:text="Listen Later"
+                android:layout_marginLeft="40dp">
+            </TextView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

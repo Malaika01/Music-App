@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".MainActivity13">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.1"
+            android:text="Skip"
+            android:layout_marginLeft="20dp"
+            android:textColor="#F9A825"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="0.1"
+            android:text="Select Playlist"
+            android:textColor="#FFFF"
+            android:textSize="40dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.1"
+            android:text="Next"
+            android:textColor="#F9A825"
+            android:textSize="20dp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_weight="1.5">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/square2">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="100dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+
+                android:src="@drawable/circle">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/add4">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.5"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_weight="0.25"
+            android:layout_width="100dp"
+            android:orientation="vertical"
+            android:background="#CD322929"
+            android:weightSum="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/fav"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="0.5"
+                android:text="Liked"
+                android:textColor="@color/white"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.25"
+            android:layout_width="100dp"
+            android:orientation="vertical"
+
+            android:weightSum="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/add3"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="0.5"
+                android:text="Add"
+                android:textColor="@color/white"
+                android:textSize="15dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.25"
+            android:layout_width="100dp"
+            android:orientation="vertical"
+            android:background="#CD322929"
+            android:weightSum="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/search"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="0.5"
+                android:text="Search"
+                android:textColor="@color/white"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.25"
+            android:layout_width="100dp"
+            android:orientation="vertical"
+            android:background="#CD322929"
+            android:weightSum="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/later"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5"
+                android:text="Listen Later"
+                android:textColor="@color/white"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
